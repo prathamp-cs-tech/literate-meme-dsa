@@ -73,32 +73,31 @@ int main() {
     int choice, value;
 
     while (1) {
-        printf("\n--- Binary Search Tree Menu ---\n");
         printf("1.Insert 2.Inorder 3.Preorder 4.Postorder 5.Display 6.Exit\n");
         printf("Enter choice: ");
         scanf("%d", &choice);
 
         switch (choice) {
         case 1:
-            printf("Enter value to insert: ");
+            printf("Enter value: ");
             scanf("%d", &value);
             root = insert(root, value);
             break;
 
         case 2:
-            printf("Inorder Traversal: ");
+            printf("Inorder: ");
             inorder(root);
             printf("\n");
             break;
 
         case 3:
-            printf("Preorder Traversal: ");
+            printf("Preorder: ");
             preorder(root);
             printf("\n");
             break;
 
         case 4:
-            printf("Postorder Traversal: ");
+            printf("Postorder: ");
             postorder(root);
             printf("\n");
             break;
@@ -117,3 +116,4 @@ int main() {
 
     return 0;
 }
+
